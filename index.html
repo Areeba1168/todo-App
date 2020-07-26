@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+</head>
+    <style>
+        body{
+            background-image: url(image/calender2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .btn{
+            margin-top: 10px;
+            border: 2px solid black;
+            background-color:rgb(133, 58, 58);
+            color: rgb(230, 220, 220);
+            border-radius: 3px;
+        }
+        .btn:hover{
+            background-color: rgb(151, 85, 85);
+        }
+        
+        
+        .delete,.edit{
+            margin-left: 12px;
+            margin-bottom: 15px;
+            background-color:rgb(133, 58, 58) ;
+            color: black;
+        }
+        .delete,.edit:hover{
+            background-color:rgb(133, 58, 58);
+            border:2px solid white;
+        }
+        .unlist{
+            margin-top: 8px;
+            list-style: none;
+        }
+        .border{
+            text-align: center;
+            background-color: white;
+            height: 300px;
+            width: 250px;
+            margin-left: 40%;
+            border-radius: 10px;
+        }
+        
+    </style>
+
+
+<body>
+    <nav>
+        <h1 style="margin-left: 45%;">ToDO List</h1>
+    </nav>
+<div class="border">
+    <div>
+        <input style="margin-top: 10px; border: 2px solid black; border-radius: 5px;" type="text" id="toDo" placeholder="Enter Todo"><br>
+        <button class="btn" onclick="add()">Add</button>
+        <button class="btn" onclick="deleteAll()">Delete All</button>
+    </div>
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
